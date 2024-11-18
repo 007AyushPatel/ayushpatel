@@ -4,7 +4,7 @@
   border: 2px solid black;
   border-radius: 6rem;
 }
-.leftPanel,.rightPanel{
+.leftPanel, .rightPanel{
   padding: 4rem;
 }
 .App{

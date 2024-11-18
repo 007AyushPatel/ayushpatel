@@ -1,5 +1,5 @@
  import './App.css';
- import profilephotos from './images/profilephoto.png'
+ import profilephotos from './images/profilephotos.png'
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
           <img src={profilephotos} className="profilePhoto"/>
        </div>
        <div className="rightPanel">
-        <div><h1 style={{padding:0}}>Ayush Patel</h1></div>
+        <div><h1 style={{padding:0}}> Ayush Patel</h1></div>
         <div><h4>IT Sector</h4></div>
         <div><h4>ayu.ayushpatel@gmail.com</h4></div>
         <div><h4>INDIA</h4></div>
