@@ -1,9 +1,31 @@
  import './App.css';
+ import React, { useState } from "react";
  import profilephotos from './images/profilephotos.png'
+ import { Toggle } from '@fluentui/react/lib/Toggle';
+
+ 
 
 function App() {
+   const _Change=(e,checked)=>{
+    if(checked){
+      document.querySelector('body').setAttribute('data-theme','dark');
+     }else{
+      document.querySelector('body').setAttribute('data-theme','light');
+     }
+  }
   return (
-    <div className="App">
+    <div>
+      <div style={{float:'right'}}>
+      <Toggle
+          className='toggle'
+          label="bgcolor"
+          inlineLabel
+          onText="On"
+          offText="Off"
+          onChange={_Change} 
+        />
+    </div>
+    <div className="App">     
        <div className="leftPanel">
           <img src={profilephotos} className="profilePhoto"/>
        </div>
@@ -14,6 +36,7 @@ function App() {
         <div><h4>INDIA</h4></div>
        </div>
     </div>
+  </div>
   );
 }
 

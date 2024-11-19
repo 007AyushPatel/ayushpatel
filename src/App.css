@@ -4,9 +4,40 @@
   border: 2px solid black;
   border-radius: 6rem;
 }
+.leftPanel{
+  background-color: #36802d;
+}
 .leftPanel, .rightPanel{
   padding: 4rem;
 }
 .App{
   display: flex;
+}
+
+[data-theme="light"]{
+  transition: color 1s ease;
+  transition: background 1s ease;
+  background-color: white;
+}
+
+[data-theme="dark"]{
+  transition: color 1s ease;
+  transition: background 1s ease;
+  background-color: #1e1f25;
+
+  h2,h1,h4,label,
+  p,
+  button {
+    color: white;
+  }
+
+  button {
+    border: 2px solid white;
+  }
+
+  button:hover {
+    color: black;
+    background: white;
+  }
+
 }
