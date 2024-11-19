@@ -1,6 +1,6 @@
  import './App.css';
  import React, { useState } from "react";
- import profilephotos from './images/profilephotos.png'
+ import dp from './images/dp.jpeg'
  import { Toggle } from '@fluentui/react/lib/Toggle';
 
  
@@ -27,7 +27,7 @@ function App() {
       </div>
       <div className="App">     
         <div className="leftPanel">
-            <img src={profilephotos} className="profilePhoto"/>
+            <img src={dp} className="profilePhoto"/>
         </div>
         <div className="rightPanel">
           <div><h1 style={{padding:0}}> Ayush Patel</h1></div>
