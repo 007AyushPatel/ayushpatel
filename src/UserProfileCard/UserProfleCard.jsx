@@ -2,6 +2,7 @@ import React from 'react';
 import './UserProfileCard.css';
 import dp from '../images/dp.jpeg'
 
+
 const UserProfileCard=()=>{
     return (
         <div className='upc'>
@@ -13,10 +14,10 @@ const UserProfileCard=()=>{
                     Profile : Software Engineer 
                 </div>
                 <div className='profile-description'>
-                    Profile : Software Engineer 
+                    Location : Delhi, India 
                 </div>
                 <div className='profile-description'>
-                    Profile : Software Engineer 
+                    Organization : IT Consulting 
                 </div>
              </div>
         </div>

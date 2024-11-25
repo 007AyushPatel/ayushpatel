@@ -1,9 +1,22 @@
  
-.App{
+.leftsidePanel{
+  width: 30%;
+}
+.rightsidePanel{
+  width: 70%;
+  margin:20px;
+    border-radius: 4px;
+    padding-bottom: 20px;
+}
+.app{
   display: flex;
 }
 
-
+.gradiant{
+  background-image: linear-gradient(#91baff,#205fff);
+  height: 125px;
+  border-radius: 4px 4px 0px 0px;
+}
 .wrapper .button{
   display: inline-block;
   height: 60px;

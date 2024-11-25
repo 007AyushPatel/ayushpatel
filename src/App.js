@@ -1,9 +1,11 @@
 import './App.css';
 import React, { useState } from "react";
-import dp from './images/dp.jpeg'
+import dp from './images/dp.jpeg';
 import { Toggle } from '@fluentui/react/lib/Toggle';
 import ToggleSidebar from './ToggleSidebar';
+
 import UserProfileCard from './UserProfileCard/UserProfleCard';
+import { FontWeights } from '@fluentui/react';
 
 
 
@@ -17,16 +19,6 @@ function App() {
   }
   return (
     <div className='app'>
-      <div style={{ float: 'right' }}>
-        <Toggle
-          className='toggle'
-          label="bgcolor"
-          inlineLabel
-          onText="On"
-          offText="Off"
-          onChange={_Change}
-        />
-      </div>
       <div className='leftsidePanel'>
         <UserProfileCard />
         <div className='buttonlist'>
@@ -37,13 +29,7 @@ function App() {
               </div>
               <span>Facebook</span>
             </div>
-            <div class="button">
-              <div class="icon">
-                <i class="fab fa-twitter"></i>
-              </div>
-              <span>Twitter</span>
-            </div>
-            <div class="button">
+             <div class="button">
               <div class="icon">
                 <i class="fab fa-instagram"></i>
               </div>
@@ -55,13 +41,22 @@ function App() {
               </div>
               <span>Gmail</span>
             </div>
-            <div class="button">
-              <div class="icon">
-                <i class="fab fa-youtube"></i>
-              </div>
-              <span>YouTube</span>
-            </div>
+             
           </div>
+        </div>
+      </div>
+      <div className='rightsidePanel'>
+        <div className='gradiant'>
+        <div style={{ float: 'right' }}>
+                <Toggle
+                className='toggle' 
+                onChange={_Change}
+                />
+            </div>
+        </div>
+        <div>
+          <h2 style={{fontWeight:500}}>Experience</h2>
+          <h2 style={{fontWeight:500}}>Skills</h2>
         </div>
       </div>
     </div>
