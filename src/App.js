@@ -5,10 +5,9 @@ import { Toggle } from '@fluentui/react/lib/Toggle';
 import ToggleSidebar from './ToggleSidebar';
 
 import UserProfileCard from './UserProfileCard/UserProfleCard';
-import { FontWeights } from '@fluentui/react';
+import CardDetails from './Card/CardDetails';
 
-
-
+  
 function App() {
   const _Change = (e, checked) => {
     if (checked) {
@@ -47,7 +46,7 @@ function App() {
       </div>
       <div className='rightsidePanel'>
         <div className='gradiant'>
-        <div style={{ float: 'right' }}>
+        <div className='daylighttoggle' style={{ float: 'right' }}>
                 <Toggle
                 className='toggle' 
                 onChange={_Change}
@@ -55,7 +54,10 @@ function App() {
             </div>
         </div>
         <div>
-          <h2 style={{fontWeight:500}}>Experience</h2>
+          <div className='Experience'>
+            <h2 style={{fontWeight:500}}>Experience</h2>
+            <CardDetails/>        
+          </div>          
           <h2 style={{fontWeight:500}}>Skills</h2>
         </div>
       </div>
