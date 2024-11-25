@@ -76,6 +76,9 @@
   color: #ff0000;
 }
 
+.buttonlist{
+  padding-left:15px ;
+}
 [data-theme="light"]{
   transition: color 1s ease;
   transition: background 1s ease;
